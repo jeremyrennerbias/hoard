@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" type="image/png" href="/favicon.ico">
+<style>
+body {
+  font-family: monospace;
+  background-color: black;
+  color: white;
+  margin-bottom: 100px;
+}
+a:link {
+  color: cyan;
+}
+a:visited {
+  color: magenta;
+}
+h1 {
+  color: white;
+  text-shadow: 0px 0px 30px purple;
+}
+.head {
+  margin-bottom: -2em;
+}
+.head h1 {
+  display: inline-block;
+  margin-right: 1ex;
+  vertical-align: top;
+}
+.head div {
+  display: inline-block;
+  margin-top: 2em;
+  vertical-align: top;
+}
+.head img {
+  margin-top: -10px;
+  margin-bottom: -5px;
+  float: right;
+}
+.demo {
+  width: 300px;
+  height: 169px;
+  border: 1px solid transparent;
+}
+.demo:hover {
+  border: 1px solid white;
+}
+.section {
+  display: relative;
+  min-height: 20ex;
+  margin-bottom: 3em;
+}
+.section .label {
+  transform: rotate(-90deg) translate(-10ex,-10ex);
+  width: 20ex;
+  margin-left: 0.5em;
+  margin-top: 1em;
+  background-color: purple;
+  text-align: center;
+}
+.section .label a:link, .section .label a:visited {
+  color: white;
+  text-decoration: none;
+}
+.section .sublabel {
+  background-color: teal;
+  color: purple;
+}
+.section .content {
+  margin-left: 1.5em;
+}
+.section .content .project {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  margin-bottom: 1em;
+  margin-top: -9px;
+  border: 1px solid transparent;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.section .content .project:hover {
+  border-color: white;
+}
+.section .content .project .img {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+}
+.br {
+  margin-bottom: 1em;
+}
+
+.details {
+  padding: 0.5em 0.5em 0;
+  margin: -0.5em -0.5em 0;
+}
+
+.summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+</style>
+</head>
+<body>
+
+<center><h1>Gender nature terminology</h1></center>
+<center><p>Drop-down arrows will describe the definition of a term. MOBILE UNFRIENDLY. Might also render improperly because I'm bad at HTML.</center>
+
+<center><details>
+    <summary>Masculine (MIN)</summary>
+    <p>Traits which, societally, are associated with men</p>
+  </details></center>
+<center><details>
+    <summary>Feminine (FIN)</summary>
+    <p>Traits which, societally, are associated with women</p>
+  </details></center>
+<center><details>
+    <summary>Male (MAIN)</summary>
+    <p>Gender attributes which are male or are manly; related to men</p>
+  </details></center>
+<center><details>
+    <summary>Female (FEIN)</summary>
+    <p>Gender attributes which are female or are womanly; related to women</p>
+  </details></center>
+  
+<script>
+  var images = document.querySelectorAll('img')
+  for (var i = 0; i < images.length; i++) {
+    images[i].addEventListener('error', function () {
+      this.src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAAD'
+        + 'EUlfTAAAALUlEQVQYV2P8b2//n/HgQUYGNAAWB4mhK4Dx4TpgAsgKUYxDN4GwTpx24nM'
+        + 'tAFEYMQA8p7M4AAAAAElFTkSuQmCC'
+    })
+  }
+</script>
+</body>
+</html>
